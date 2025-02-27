@@ -1,0 +1,4 @@
+#!/bin/sh
+npx htmlhint ./**/*.html || exit 1
+npx stylelint **/*.css || exit 1
+
