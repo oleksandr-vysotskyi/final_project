@@ -4,11 +4,78 @@
         <meta charset="UTF-8">
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet">
+        <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/styles.css">
-        <title>Document</title>
+        <title>Apperture</title>
     </head>
     <body>
+        <header class="cd-header">
+            <div class="header-wrapper container">
+                <a href="/index.html" class="apperture-logo" title="Apperture">
+                    <svg class="apperture" width="128" height="31"
+                        role="img" aria-label="Apperture">
+                        <use href="./img/icons.svg#aperture_logo"></use>
+                    </svg>
+                </a>
+                <nav class="nav">
+                    <div class="nav__content">
+                        <ul class="nav__list">
+                            <li class="nav__list-item active-nav">
+                                <a href="#" title="Business areas"
+                                    class="hover-target">
+                                    Business areas
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" title="Featured images"
+                                    class="hover-target">Featured images
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" title="Gear cage">
+                                    Gear cage
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" title="Contact">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html" class="nav__list-item template"
+                                    title="Get template">
+                                    Get template
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="nav-but-wrap">
+                    <div class="menu-icon hover-target">
+                        <span
+                            class="menu-icon__line menu-icon__line-left"></span>
+                        <span class="menu-icon__line"></span>
+                        <span
+                            class="menu-icon__line menu-icon__line-right"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
