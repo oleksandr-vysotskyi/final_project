@@ -10,43 +10,46 @@ header {
 header .container {
   background-color: #181818;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 666px) and (max-width: 768px) {
   header .container {
     justify-content: space-around;
   }
 }
-header nav ul {
+
+nav ul {
   display: flex;
   align-items: center;
   gap: 56px;
   background-color: #181818;
 }
 @media screen and (min-width: 769px) and (max-width: 925px) {
-  header nav ul {
-    gap: 8px;
+  nav ul {
+    gap: 10px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  header nav ul {
+  nav ul {
     background-color: transparent;
   }
 }
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  header .nav__list {
+  .nav__list {
     display: flex;
     flex-direction: column;
   }
 }
-header li {
+
+li {
   background-color: #181818;
   cursor: pointer;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  header li {
+  li {
     background-color: transparent;
   }
 }
-header li:last-of-type {
+li:last-of-type {
   background-color: #fff;
   border-radius: 14px;
   display: flex;
@@ -57,15 +60,15 @@ header li:last-of-type {
   min-height: 42px;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  header li:last-of-type {
+  li:last-of-type {
     background-color: transparent;
   }
 }
-header li:last-of-type:hover {
+li:last-of-type:hover {
   scale: 1.1;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  header li:last-of-type {
+  li:last-of-type {
     border-radius: 0;
     min-width: 0;
     min-height: 0;
@@ -73,7 +76,7 @@ header li:last-of-type:hover {
     display: block;
   }
 }
-header li a {
+li a {
   font-weight: 400;
   font-size: 15px;
   line-height: 133%;
@@ -81,12 +84,12 @@ header li a {
   position: relative;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  header li a {
+  li a {
     font-weight: 600;
     font-size: 15px;
   }
 }
-header li a::before {
+li a::before {
   content: "";
   display: block;
   background-color: #fff;
@@ -96,21 +99,21 @@ header li a::before {
   width: 0;
   transition: 0.4s;
 }
-header li a:hover::before {
+li a:hover::before {
   width: 100%;
 }
-header li .template {
+li .template {
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   letter-spacing: 0.03em;
   color: #181818;
 }
-header li .template:hover::before {
+li .template:hover::before {
   width: 0;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  header li .template {
+  li .template {
     font-weight: 600;
     font-size: 15px;
     line-height: 133%;
