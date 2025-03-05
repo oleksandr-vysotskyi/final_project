@@ -24,7 +24,7 @@ header {
     align-items: center;
     gap: 56px;
     @include between-screen(769px, 925px) {
-      gap: 10px;
+      gap: 8px;
     }
     background-color: $black-color;
     @include between-screen(320px, 768px) {

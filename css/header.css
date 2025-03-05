@@ -23,7 +23,7 @@ header nav ul {
 }
 @media screen and (min-width: 769px) and (max-width: 925px) {
   header nav ul {
-    gap: 10px;
+    gap: 8px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
