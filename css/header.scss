@@ -19,96 +19,96 @@ header {
       justify-content: space-around;
     }
   }
-}
-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 56px;
-  @include between-screen(769px, 925px) {
-    gap: 10px;
-  }
-  background-color: $black-color;
-  @include between-screen(320px, 768px) {
-    background-color: transparent;
-  }
-}
-.nav__list {
-  @include between-screen(320px, 768px) {
+  nav ul {
     display: flex;
-    flex-direction: column;
-  }
-}
-li {
-  background-color: $black-color;
-  @include between-screen(320px, 768px) {
-    background-color: transparent;
-  }
-  cursor: pointer;
-  &:last-of-type {
-    background-color: $white-color;
+    align-items: center;
+    gap: 56px;
+    @include between-screen(769px, 925px) {
+      gap: 10px;
+    }
+    background-color: $black-color;
     @include between-screen(320px, 768px) {
       background-color: transparent;
     }
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    justify-content: center;
-    min-width: 142px;
-    min-height: 42px;
-    &:hover {
-      scale: 1.1;
-    }
+  }
+  .nav__list {
     @include between-screen(320px, 768px) {
-      border-radius: 0;
-      min-width: 0;
-      min-height: 0;
-      padding: 0;
-      display: block;
+      display: flex;
+      flex-direction: column;
     }
   }
-  a {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 133%;
-    color: $white-color;
-    position: relative;
+  li {
+    background-color: $black-color;
     @include between-screen(320px, 768px) {
-      font-weight: 600;
-      font-size: 15px;
+      background-color: transparent;
     }
-    &::before {
-      content: "";
-      display: block;
+    cursor: pointer;
+    &:last-of-type {
       background-color: $white-color;
-      height: 2px;
-      position: absolute;
-      bottom: -15px;
-      width: 0;
-      transition: 0.4s;
+      @include between-screen(320px, 768px) {
+        background-color: transparent;
+      }
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      justify-content: center;
+      min-width: 142px;
+      min-height: 42px;
+      &:hover {
+        scale: 1.1;
+      }
+      @include between-screen(320px, 768px) {
+        border-radius: 0;
+        min-width: 0;
+        min-height: 0;
+        padding: 0;
+        display: block;
+      }
     }
-    &:hover::before {
-      width: 100%;
-    }
-  }
-  .template {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: 0.03em;
-    color: $black-color;
-    &:hover::before {
-      width: 0;
-    }
-    @include between-screen(320px, 768px) {
-      font-weight: 600;
+    a {
+      font-weight: 400;
       font-size: 15px;
       line-height: 133%;
-      border-radius: 0;
-      min-width: 0;
-      min-height: 0;
-      padding: 0;
       color: $white-color;
+      position: relative;
+      @include between-screen(320px, 768px) {
+        font-weight: 600;
+        font-size: 15px;
+      }
+      &::before {
+        content: "";
+        display: block;
+        background-color: $white-color;
+        height: 2px;
+        position: absolute;
+        bottom: -15px;
+        width: 0;
+        transition: 0.4s;
+      }
+      &:hover::before {
+        width: 100%;
+      }
+    }
+    .template {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      letter-spacing: 0.03em;
+      color: $black-color;
+      &:hover::before {
+        width: 0;
+      }
+      @include between-screen(320px, 768px) {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 133%;
+        border-radius: 0;
+        min-width: 0;
+        min-height: 0;
+        padding: 0;
+        color: $white-color;
+      }
     }
   }
 }
