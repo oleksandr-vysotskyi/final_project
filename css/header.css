@@ -2,7 +2,7 @@ header {
   padding: 30px 20px 30px;
   background-color: #181818;
 }
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   header {
     padding: 12px 12px;
   }
@@ -10,18 +10,28 @@ header {
 header .container {
   background-color: #181818;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header .container {
+    justify-content: space-around;
+  }
+}
 header nav ul {
   display: flex;
   align-items: center;
   gap: 56px;
   background-color: #181818;
 }
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media screen and (min-width: 769px) and (max-width: 925px) {
+  header nav ul {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
   header nav ul {
     background-color: transparent;
   }
 }
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   header .nav__list {
     display: flex;
     flex-direction: column;
@@ -31,7 +41,7 @@ header li {
   background-color: #181818;
   cursor: pointer;
 }
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   header li {
     background-color: transparent;
   }
@@ -46,7 +56,7 @@ header li:last-of-type {
   min-width: 142px;
   min-height: 42px;
 }
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   header li:last-of-type {
     background-color: transparent;
   }
@@ -54,7 +64,7 @@ header li:last-of-type {
 header li:last-of-type:hover {
   scale: 1.1;
 }
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   header li:last-of-type {
     border-radius: 0;
     min-width: 0;
@@ -70,7 +80,7 @@ header li a {
   color: #fff;
   position: relative;
 }
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   header li a {
     font-weight: 600;
     font-size: 15px;
@@ -99,7 +109,7 @@ header li .template {
 header li .template:hover::before {
   width: 0;
 }
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   header li .template {
     font-weight: 600;
     font-size: 15px;
@@ -116,7 +126,7 @@ header li .template:hover::before {
   display: none;
 }
 
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   body {
     overflow-x: hidden;
     transition: all 300ms linear;

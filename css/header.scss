@@ -9,37 +9,43 @@ $white-color: #fff;
 
 header {
   padding: 30px 20px 30px;
-  @include between-screen(414px, 430px) {
+  @include between-screen(320px, 768px) {
     padding: 12px 12px;
   }
   background-color: $black-color;
   .container {
     background-color: $black-color;
+    @include between-screen(320px, 768px) {
+     justify-content: space-around;
+    }
   }
   nav ul {
     display: flex;
     align-items: center;
     gap: 56px;
+    @include between-screen(769px, 925px) {
+      gap: 10px;
+    }
     background-color: $black-color;
-    @include between-screen(414px, 430px) {
+    @include between-screen(320px, 768px) {
       background-color: transparent;
     }
   }
   .nav__list {
-    @include between-screen(414px, 430px) {
+    @include between-screen(320px, 768px) {
       display: flex;
       flex-direction: column;
     }
   }
   li {
     background-color: $black-color;
-    @include between-screen(414px, 430px) {
+    @include between-screen(320px, 768px) {
       background-color: transparent;
     }
     cursor: pointer;
     &:last-of-type {
       background-color: $white-color;
-      @include between-screen(414px, 430px) {
+      @include between-screen(320px, 768px) {
         background-color: transparent;
       }
       border-radius: 14px;
@@ -52,7 +58,7 @@ header {
       &:hover {
         scale: 1.1;
       }
-      @include between-screen(414px, 430px) {
+      @include between-screen(320px, 768px) {
         border-radius: 0;
         min-width: 0;
         min-height: 0;
@@ -66,7 +72,7 @@ header {
       line-height: 133%;
       color: $white-color;
       position: relative;
-      @include between-screen(414px, 430px) {
+      @include between-screen(320px, 768px) {
         font-weight: 600;
         font-size: 15px;
       }
@@ -93,7 +99,7 @@ header {
       &:hover::before {
         width: 0;
       }
-      @include between-screen(414px, 430px) {
+      @include between-screen(320px, 768px) {
         font-weight: 600;
         font-size: 15px;
         line-height: 133%;
@@ -110,7 +116,7 @@ header {
   display: none;
 }
 
-@include between-screen(414px, 430px) {
+@include between-screen(320px, 768px) {
   body {
     overflow-x: hidden;
     -webkit-transition: all 300ms linear;
