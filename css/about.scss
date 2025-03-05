@@ -63,28 +63,29 @@ $white-color: #fff;
       }
     }
   }
-}
-.icons {
-  ul {
-    display: flex;
-    gap: 16px;
-    justify-content: end;
-    position: relative;
-    right: 40px;
-    @include between-screen(375px, 768px) {
+
+  .icons {
+    ul {
+      display: flex;
+      gap: 16px;
+      justify-content: end;
+      position: relative;
+      right: 40px;
+      @include between-screen(375px, 768px) {
         position: static;
         justify-content: center;
       }
-  }
-  .icon-item {
-    display: flex;
-    gap: 6px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 100%;
-    color: $white-color;
-    svg {
-      order: -1;
+    }
+    .icon-item {
+      display: flex;
+      gap: 6px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 100%;
+      color: $white-color;
+      svg {
+        order: -1;
+      }
     }
   }
 }

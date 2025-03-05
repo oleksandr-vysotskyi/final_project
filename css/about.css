@@ -61,8 +61,7 @@
     min-width: 200px;
   }
 }
-
-.icons ul {
+.about .icons ul {
   display: flex;
   gap: 16px;
   justify-content: end;
@@ -70,12 +69,12 @@
   right: 40px;
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .icons ul {
+  .about .icons ul {
     position: static;
     justify-content: center;
   }
 }
-.icons .icon-item {
+.about .icons .icon-item {
   display: flex;
   gap: 6px;
   font-weight: 400;
@@ -83,6 +82,6 @@
   line-height: 100%;
   color: #fff;
 }
-.icons .icon-item svg {
+.about .icons .icon-item svg {
   order: -1;
 }/*# sourceMappingURL=about.css.map */
