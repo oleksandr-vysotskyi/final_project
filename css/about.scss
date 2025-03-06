@@ -11,8 +11,6 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
   padding: 0 0 41px;
   @include between-screen(375px, 768px) {
     padding: 0 0 20px;
