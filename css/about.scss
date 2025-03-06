@@ -12,9 +12,6 @@
   background-position: center center;
   background-repeat: no-repeat;
   padding: 0 0 41px;
-  @include between-screen(375px, 768px) {
-    padding: 12px 12px 20px;
-  }
   .container {
     justify-content: center;
   }
@@ -24,6 +21,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include between-screen(375px, 768px) {
+      padding: 441px 12px 12px 20px;
+    }
     h3 {
       @include font-style(
         $base-font-weight,
@@ -39,7 +39,7 @@
     h1 {
       @include font-style($base-font-weight, $h1-font-size, $h1-line-height);
       text-align: center;
-      min-width: 463px;
+      max-width: 463px;
       color: $white-color;
       margin: 0 0 18px;
       @include between-screen(375px, 768px) {
