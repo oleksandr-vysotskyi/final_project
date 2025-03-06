@@ -75,7 +75,9 @@ header {
       position: relative;
       @include between-screen(320px, 768px) {
         @include font-style(
-          $bold-font-weight
+          $semi-bold-font-weight,
+          $link-regular-font-size,
+          $link-regular-line-height
         );
       }
       &::before {
@@ -93,11 +95,11 @@ header {
       }
     }
     .template {
-      @include font-style(
-        $base-font-weight,
-        $link-template-font-size,
-        $link-template-line-height
-      );
+      // @include font-style(
+      //   $base-font-weight,
+      //   $link-template-font-size,
+      //   $link-template-line-height
+      // );
       letter-spacing: 0.03em;
       color: $black-color;
       &:hover::before {
@@ -107,11 +109,11 @@ header {
         font-weight: 600;
         font-size: 15px;
         line-height: 133%;
-        @include font-style(
-          $semi-bold-font-weight,
-          $link-regular-font-size,
-          $link-regular-line-height
-        );
+        // @include font-style(
+        //   $semi-bold-font-weight,
+        //   $link-regular-font-size,
+        //   $link-regular-line-height
+        // );
         border-radius: 0;
         min-width: 0;
         min-height: 0;

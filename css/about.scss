@@ -56,7 +56,11 @@
       min-width: 580px;
       color: $silver-color;
       @include between-screen(375px, 430px) {
-        font-size: 12px;
+        @include font-style(
+          $base-font-weight,
+          $base-font-size,
+          $paragraph-line-height
+        );
         width: 80%;
         min-width: 200px;
       }
