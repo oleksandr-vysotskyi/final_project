@@ -1,5 +1,5 @@
 .about {
-  background-image: url("../img/background-image.png");
+  background-image: url("../img/background-image.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -54,11 +54,17 @@
   min-width: 580px;
   color: #c0c0c0;
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 430px) {
   .about .about-info p {
     font-size: 12px;
     width: 80%;
     min-width: 200px;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 650px) {
+  .about .about-info p {
+    width: 90%;
+    min-width: 430px;
   }
 }
 .about .icons ul {
@@ -68,7 +74,7 @@
   position: relative;
   right: 40px;
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 1225px) {
   .about .icons ul {
     position: static;
     justify-content: center;

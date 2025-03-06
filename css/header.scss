@@ -1,5 +1,4 @@
-$black-color: #181818;
-$white-color: #fff;
+@import "variables";
 
 @mixin between-screen($min, $max) {
   @media screen and (min-width: $min) and (max-width: $max) {
@@ -23,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     gap: 56px;
-    @include between-screen(769px, 925px) {
+    @include between-screen(769px, 950px) {
       gap: 10px;
     }
     background-color: $black-color;

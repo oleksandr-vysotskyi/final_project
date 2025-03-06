@@ -1,5 +1,4 @@
-$silver-color: #c0c0c0;
-$white-color: #fff;
+@import "variables";
 
 @mixin between-screen($min, $max) {
   @media screen and (min-width: $min) and (max-width: $max) {
@@ -8,7 +7,7 @@ $white-color: #fff;
 }
 
 .about {
-  background-image: url("../img/background-image.png");
+  background-image: url("../img/background-image.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -56,14 +55,17 @@ $white-color: #fff;
       text-align: center;
       min-width: 580px;
       color: $silver-color;
-      @include between-screen(375px, 768px) {
+      @include between-screen(375px, 430px) {
         font-size: 12px;
         width: 80%;
         min-width: 200px;
       }
+      @include between-screen(431px, 650px) {
+        width: 90%;
+        min-width: 430px;
+      }
     }
   }
-
   .icons {
     ul {
       display: flex;
@@ -71,7 +73,7 @@ $white-color: #fff;
       justify-content: end;
       position: relative;
       right: 40px;
-      @include between-screen(375px, 768px) {
+      @include between-screen(375px, 1225px) {
         position: static;
         justify-content: center;
       }

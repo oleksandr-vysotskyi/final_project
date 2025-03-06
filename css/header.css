@@ -21,7 +21,7 @@ header nav ul {
   gap: 56px;
   background-color: #181818;
 }
-@media screen and (min-width: 769px) and (max-width: 925px) {
+@media screen and (min-width: 769px) and (max-width: 950px) {
   header nav ul {
     gap: 10px;
   }
