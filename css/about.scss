@@ -25,9 +25,11 @@
     align-items: center;
     justify-content: center;
     h3 {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 143%;
+      @include font-style(
+        $base-font-weight,
+        $paragraph-font-size,
+        $paragraph-line-height
+      );
       letter-spacing: 0.14em;
       text-transform: uppercase;
       text-align: center;
@@ -35,9 +37,7 @@
       color: $silver-color;
     }
     h1 {
-      font-weight: 400;
-      font-size: 54px;
-      line-height: 110%;
+      @include font-style($base-font-weight, $h1-font-size, $h1-line-height);
       text-align: center;
       min-width: 463px;
       color: $white-color;
@@ -47,9 +47,11 @@
       }
     }
     p {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 143%;
+      @include font-style(
+        $base-font-weight,
+        $paragraph-font-size,
+        $paragraph-line-height
+      );
       text-align: center;
       min-width: 580px;
       color: $silver-color;
@@ -79,9 +81,11 @@
     .icon-item {
       display: flex;
       gap: 6px;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 100%;
+      @include font-style(
+        $base-font-weight,
+        $base-font-size,
+        $base-line-height
+      );
       color: $white-color;
       svg {
         order: -1;

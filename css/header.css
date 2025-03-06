@@ -82,8 +82,9 @@ header li a {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   header li a {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 15px;
+    line-height: 133%;
   }
 }
 header li a::before {
