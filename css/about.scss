@@ -8,6 +8,9 @@
   max-width: 100%;
   max-height: 80vh;
   padding: 0 0 41px;
+  @include between-screen(375px, 768px) {
+    padding: 0 12px;
+  }
   .container {
     justify-content: center;
   }

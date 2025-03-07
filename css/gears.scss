@@ -7,6 +7,9 @@
       flex-direction: column;
       align-items: center;
       background-color: $black-background-color;
+      @include between-screen(375px, 768px) {
+        padding: 0 12px;
+      }
     }
   }
   .gear-tools {
@@ -26,10 +29,14 @@
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 50%;
-    @include between-screen(375px, 1225px) {
-        align-items: center;
-        padding: 150px 0 150px;
-      }
+    @include between-screen(375px, 768px) {
+      align-items: center;
+      padding-left: 0;
+    }
+    @include between-screen(769px, 1225px) {
+      align-items: center;
+      padding: 150px 0 150px;
+    }
     h4 {
       letter-spacing: 0.14em;
       text-transform: uppercase;
@@ -49,6 +56,7 @@
       margin: 0 0 20px;
       @include between-screen(375px, 1225px) {
         text-align: center;
+        @include font-style($fw-400, $fs-12, $lh-143);
       }
     }
     a {
@@ -82,13 +90,13 @@
     max-width: 100vh;
     display: flex;
     flex-grow: 1;
-    flex-shrink: 1; 
+    flex-shrink: 1;
     flex-basis: 50%;
     justify-content: end;
     @include between-screen(375px, 1225px) {
-        justify-content: center;
-        width: 80vw;
-      }
+      justify-content: center;
+      width: 80vw;
+    }
     ul {
       display: flex;
       gap: 16px;

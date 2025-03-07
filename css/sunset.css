@@ -8,10 +8,21 @@
   max-height: 600px;
   padding: 260px 0;
 }
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .sunset {
+    padding: 260px 12px;
+  }
+}
 .sunset .container {
   justify-content: end;
 }
 @media screen and (min-width: 375px) and (max-width: 1180px) {
+  .sunset .container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .sunset .container {
     justify-content: center;
     align-items: center;

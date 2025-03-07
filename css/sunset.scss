@@ -9,9 +9,16 @@
   height: 80vh;
   max-height: 600px;
   padding: 260px 0;
+  @include between-screen(375px, 768px) {
+    padding: 260px 12px
+  }
   .container {
     justify-content: end;
     @include between-screen(375px, 1180px) {
+      justify-content: center;
+      align-items: center;
+    }
+    @include between-screen(375px, 768px) {
       justify-content: center;
       align-items: center;
     }
