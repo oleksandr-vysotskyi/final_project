@@ -67,17 +67,17 @@ header {
     }
     a {
       @include font-style(
-        $base-font-weight,
-        $link-regular-font-size,
-        $link-regular-line-height
+        $fw-400,
+        $fs-15,
+        $lh-133
       );
       color: $white-color;
       position: relative;
       @include between-screen(320px, 768px) {
         @include font-style(
-          $semi-bold-font-weight,
-          $link-regular-font-size,
-          $link-regular-line-height
+          $fw-600,
+          $fs-15,
+          $lh-133
         );
       }
       &::before {
@@ -95,11 +95,11 @@ header {
       }
     }
     .template {
-      // @include font-style(
-      //   $base-font-weight,
-      //   $link-template-font-size,
-      //   $link-template-line-height
-      // );
+      @include font-style(
+        $fw-400,
+        $fs-16,
+        $lh-125
+      );
       letter-spacing: 0.03em;
       color: $black-color;
       &:hover::before {
@@ -109,11 +109,11 @@ header {
         font-weight: 600;
         font-size: 15px;
         line-height: 133%;
-        // @include font-style(
-        //   $semi-bold-font-weight,
-        //   $link-regular-font-size,
-        //   $link-regular-line-height
-        // );
+        @include font-style(
+          $fw-600,
+          $fs-15,
+          $lh-133
+        );
         border-radius: 0;
         min-width: 0;
         min-height: 0;

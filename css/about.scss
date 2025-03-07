@@ -21,15 +21,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @include between-screen(375px, 768px) {
+    @include between-screen(375px, 896px) {
       padding: 441px 12px 12px 20px;
     }
     h3 {
-      @include font-style(
-        $base-font-weight,
-        $paragraph-font-size,
-        $paragraph-line-height
-      );
+      @include font-style($fw-400, $fs-14, $lh-143);
       letter-spacing: 0.14em;
       text-transform: uppercase;
       text-align: center;
@@ -37,30 +33,22 @@
       color: $silver-color;
     }
     h1 {
-      @include font-style($base-font-weight, $h1-font-size, $h1-line-height);
+      @include font-style($fw-400, $fs-54, $lh-110);
       text-align: center;
       max-width: 463px;
       color: $white-color;
       margin: 0 0 18px;
       @include between-screen(375px, 768px) {
-        font-size: 38px;
+        @include font-style($fw-400, $fs-38, $lh-110);
       }
     }
     p {
-      @include font-style(
-        $base-font-weight,
-        $paragraph-font-size,
-        $paragraph-line-height
-      );
+      @include font-style($fw-400, $fs-14, $lh-143);
       text-align: center;
       min-width: 580px;
       color: $silver-color;
       @include between-screen(375px, 430px) {
-        @include font-style(
-          $base-font-weight,
-          $base-font-size,
-          $paragraph-line-height
-        );
+        @include font-style($fw-400, $fs-12, $lh-143);
         width: 80%;
         min-width: 200px;
       }
@@ -85,11 +73,7 @@
     .icon-item {
       display: flex;
       gap: 6px;
-      @include font-style(
-        $base-font-weight,
-        $base-font-size,
-        $base-line-height
-      );
+      @include font-style($fw-400, $fs-12, $lh-100);
       color: $white-color;
       svg {
         order: -1;

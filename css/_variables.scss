@@ -1,24 +1,27 @@
 $black-color: #181818;
+$black-background-color: #000000;
 $white-color: #fff;
 $silver-color: #c0c0c0;
 
-$base-font-weight: 400;
-$base-font-size: 12px;
-$base-line-height: 100%;
+$fw-400: 400;
+$fw-600: 600;
 
-$paragraph-font-size: 14px;
-$paragraph-line-height: 143%;
+$fs-12: 14px;
+$fs-14: 14px;
+$fs-15: 15px;
+$fs-16: 16px;
+$fs-23: 23px;
+$fs-38: 38px;
+$fs-40: 40px;
+$fs-54: 54px;
 
-$semi-bold-font-weight: 600;
-
-$link-regular-font-size: 15px;
-$link-regular-line-height: 133%;
-
-$link-template-font-size: 16px;
-$link-template-line-height: 125%;
-
-$h1-font-size: 54px;
-$h1-line-height: 110%;
+$lh-100: 100%;
+$lh-105: 105%;
+$lh-110: 110%;
+$lh-125: 125%;
+$lh-130: 130%;
+$lh-133: 133%;
+$lh-143: 143%;
 
 @mixin font-style($weight, $size, $line-height) {
   font-weight: $weight;

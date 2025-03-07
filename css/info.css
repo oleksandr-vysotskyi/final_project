@@ -1,0 +1,108 @@
+.info {
+  padding: 120px 0 100px 0;
+  background-color: #000000;
+}
+.info .container {
+  display: inherit;
+  background-color: #000000;
+}
+.info .info-title {
+  width: 100%;
+  text-align: center;
+}
+.info .info-title h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 105%;
+  color: #fff;
+  margin: 0 0 15px;
+}
+.info .info-title p {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 130%;
+  color: #c0c0c0;
+  margin: 0 0 42px;
+}
+.info .info-read {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1168px;
+  gap: 16px 0;
+}
+.info .info-read article {
+  padding: 421px 32px 30px 32px;
+}
+.info .info-read article h4 {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  margin: 0 0 10px;
+}
+.info .info-read article p {
+  color: #c0c0c0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  margin: 0 0 17px;
+}
+.info .info-read article a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 14px;
+  max-width: 143px;
+  max-height: 42px;
+  background-color: white;
+  padding: 5px 10px 5px 5px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+}
+.info .info-read article a svg {
+  order: -1;
+}
+.info .info-read article:first-of-type {
+  background-image: url("../img/product_photography.webp");
+  background-size: cover;
+  max-width: 576px;
+  height: 65vh;
+  max-height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.info .info-read article:nth-of-type(2) {
+  background-image: url("../img/architecture-photography.webp");
+  background-size: cover;
+  max-width: 576px;
+  height: 65vh;
+  max-height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.info .info-read article:nth-of-type(3) {
+  padding-top: 395px;
+  background-image: url("../img/drone-photography.webp");
+  background-size: cover;
+  max-width: 576px;
+  height: 65vh;
+  max-height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.info .info-read article:last-of-type {
+  padding-top: 395px;
+  background-image: url("../img/wildlife-photography.webp");
+  background-size: cover;
+  max-width: 576px;
+  height: 65vh;
+  max-height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=info.css.map */

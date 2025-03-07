@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 896px) {
   .about .about-info {
     padding: 441px 12px 12px 20px;
   }
@@ -41,7 +41,9 @@
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .about .about-info h1 {
+    font-weight: 400;
     font-size: 38px;
+    line-height: 110%;
   }
 }
 .about .about-info p {
@@ -55,7 +57,7 @@
 @media screen and (min-width: 375px) and (max-width: 430px) {
   .about .about-info p {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 143%;
     width: 80%;
     min-width: 200px;
@@ -84,7 +86,7 @@
   display: flex;
   gap: 6px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
   color: #fff;
 }
