@@ -1,15 +1,12 @@
 @import "variables";
 
-@mixin between-screen($min, $max) {
-  @media screen and (min-width: $min) and (max-width: $max) {
-    @content;
-  }
-}
-
 .info {
   padding: 120px 0 100px 0;
+  @include between-screen(768px, 900px) {
+    padding-top: 220px;
+  }
   @include between-screen(375px, 768px) {
-    padding: 60px 12px 50px 12px;
+    padding: 120px 12px 50px 12px;
   }
   background-color: $black-background-color;
   .container {
@@ -103,9 +100,6 @@
       max-height: 600px;
       background-position: center center;
       background-repeat: no-repeat;
-      @include between-screen(375px, 599px) {
-        padding-top: 380px;
-      }
     }
     article:nth-of-type(2) {
       padding-top: 380px;

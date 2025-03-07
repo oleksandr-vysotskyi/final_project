@@ -1,11 +1,5 @@
 @import "variables";
 
-@mixin between-screen($min, $max) {
-  @media screen and (min-width: $min) and (max-width: $max) {
-    @content;
-  }
-}
-
 header {
   padding: 30px 20px 30px;
   @include between-screen(320px, 768px) {

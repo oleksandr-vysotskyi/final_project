@@ -1,0 +1,114 @@
+@import "variables";
+
+.gears {
+  .container-gears {
+    display: flex;
+    @include between-screen(375px, 1225px) {
+      flex-direction: column;
+      align-items: center;
+      background-color: $black-background-color;
+    }
+  }
+  .gear-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background: linear-gradient(
+      to right,
+      $black-background-color 100vw,
+      transparent 50%
+    );
+    width: 100%;
+    max-width: 100vh;
+    height: 60vh;
+    max-height: 540px;
+    padding: 150px 0 150px 100px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    @include between-screen(375px, 1225px) {
+        align-items: center;
+        padding: 150px 0 150px;
+      }
+    h4 {
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      @include font-style($fw-400, $fs-14, $lh-143);
+      color: $silver-color;
+      margin: 0 0 6px;
+    }
+    h5 {
+      @include font-style($fw-400, $fs-28, $lh-114);
+      color: $white-color;
+      margin: 0 0 14px;
+    }
+    p {
+      @include font-style($fw-400, $fs-14, $lh-143);
+      color: $white-color;
+      max-width: 514px;
+      margin: 0 0 20px;
+      @include between-screen(375px, 1225px) {
+        text-align: center;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 14px;
+      max-width: 143px;
+      max-height: 42px;
+      background-color: white;
+      padding: 5px 10px 5px 5px;
+      color: $black-background-color;
+      @include font-style($fw-400, $fs-15, $lh-133);
+      svg {
+        order: -1;
+      }
+      &:hover {
+        scale: 1.1;
+        transition: 0.5s ease-in;
+      }
+    }
+  }
+  .icons {
+    background-image: url("../img/cameras.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 60vh;
+    max-height: 540px;
+    max-width: 100vh;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1; 
+    flex-basis: 50%;
+    justify-content: end;
+    @include between-screen(375px, 1225px) {
+        justify-content: center;
+        width: 80vw;
+      }
+    ul {
+      display: flex;
+      gap: 16px;
+      justify-content: end;
+      position: relative;
+      padding: 500px 0 0 0;
+      right: 40px;
+      margin-bottom: 40px;
+      @include between-screen(375px, 1225px) {
+        position: static;
+      }
+    }
+    .icon-item {
+      display: flex;
+      gap: 6px;
+      @include font-style($fw-400, $fs-12, $lh-100);
+      color: $white-color;
+      svg {
+        order: -1;
+      }
+    }
+  }
+}

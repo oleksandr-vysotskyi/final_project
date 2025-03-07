@@ -1,0 +1,126 @@
+.gears .container-gears {
+  display: flex;
+}
+@media screen and (min-width: 375px) and (max-width: 1225px) {
+  .gears .container-gears {
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+  }
+}
+.gears .gear-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: linear-gradient(to right, #000000 100vw, transparent 50%);
+  width: 100%;
+  max-width: 100vh;
+  height: 60vh;
+  max-height: 540px;
+  padding: 150px 0 150px 100px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+@media screen and (min-width: 375px) and (max-width: 1225px) {
+  .gears .gear-tools {
+    align-items: center;
+    padding: 150px 0 150px;
+  }
+}
+.gears .gear-tools h4 {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #c0c0c0;
+  margin: 0 0 6px;
+}
+.gears .gear-tools h5 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 114%;
+  color: #fff;
+  margin: 0 0 14px;
+}
+.gears .gear-tools p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #fff;
+  max-width: 514px;
+  margin: 0 0 20px;
+}
+@media screen and (min-width: 375px) and (max-width: 1225px) {
+  .gears .gear-tools p {
+    text-align: center;
+  }
+}
+.gears .gear-tools a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 14px;
+  max-width: 143px;
+  max-height: 42px;
+  background-color: white;
+  padding: 5px 10px 5px 5px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+}
+.gears .gear-tools a svg {
+  order: -1;
+}
+.gears .gear-tools a:hover {
+  scale: 1.1;
+  transition: 0.5s ease-in;
+}
+.gears .icons {
+  background-image: url("../img/cameras.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 60vh;
+  max-height: 540px;
+  max-width: 100vh;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  justify-content: end;
+}
+@media screen and (min-width: 375px) and (max-width: 1225px) {
+  .gears .icons {
+    justify-content: center;
+    width: 80vw;
+  }
+}
+.gears .icons ul {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  position: relative;
+  padding: 500px 0 0 0;
+  right: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 375px) and (max-width: 1225px) {
+  .gears .icons ul {
+    position: static;
+  }
+}
+.gears .icons .icon-item {
+  display: flex;
+  gap: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #fff;
+}
+.gears .icons .icon-item svg {
+  order: -1;
+}/*# sourceMappingURL=gears.css.map */

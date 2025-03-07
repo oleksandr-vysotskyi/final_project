@@ -1,0 +1,63 @@
+@import "variables";
+
+.sunset {
+  background-image: url("../img/mountain.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 80vh;
+  max-height: 600px;
+  padding: 260px 0;
+  .container {
+    justify-content: end;
+    @include between-screen(375px, 1180px) {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  article {
+    @include between-screen(375px, 1180px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  h3 {
+    color: $white-color;
+    @include font-style($fw-400, $fs-14, $lh-143);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    max-width: 206px;
+  }
+  p {
+    color: $silver-color;
+    @include font-style($fw-400, $fs-14, $lh-143);
+    max-width: 298px;
+  }
+
+  .icons {
+    ul {
+      display: flex;
+      gap: 16px;
+      justify-content: end;
+      position: relative;
+      right: 40px;
+      padding: 200px 0 0 0;
+      @include between-screen(375px, 1225px) {
+        position: static;
+        justify-content: center;
+      }
+    }
+    .icon-item {
+      display: flex;
+      gap: 6px;
+      @include font-style($fw-400, $fs-12, $lh-100);
+      color: $white-color;
+      svg {
+        order: -1;
+      }
+    }
+  }
+}
