@@ -8,6 +8,9 @@
 
 .info {
   padding: 120px 0 100px 0;
+  @include between-screen(375px, 768px) {
+    padding: 60px 12px 50px 12px;
+  }
   background-color: $black-background-color;
   .container {
     display: inherit;
@@ -20,11 +23,17 @@
       @include font-style($fw-400, $fs-40, $lh-105);
       color: $white-color;
       margin: 0 0 15px;
+      @include between-screen(375px, 430px) {
+        @include font-style($fw-400, $fs-38, $lh-110);
+      }
     }
     p {
       @include font-style($fw-400, $fs-23, $lh-130);
       color: $silver-color;
       margin: 0 0 42px;
+      @include between-screen(375px, 430px) {
+        @include font-style($fw-400, $fs-16, $lh-130);
+      }
     }
   }
   .info-read {
@@ -34,26 +43,35 @@
     justify-content: space-between;
     max-width: 1168px;
     gap: 16px 0;
+    @include between-screen(375px, 1166px) {
+      justify-content: center;
+    }
+    @include between-screen(1166px, 1180px) {
+      gap: 16px;
+      justify-content: center;
+    }
     article {
-      padding: 421px 32px 30px 32px;
+      padding: 0 32px 30px 32px;
+      flex: 1 1 576px;
+      @include between-screen(375px, 1185px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
       h4 {
         letter-spacing: 0.14em;
         text-transform: uppercase;
         color: $white-color;
-        @include font-style(
-          $fw-400,
-          $fs-14
-          $lh-143
-        );
+        @include font-style($fw-400, $fs-14, $lh-143);
         margin: 0 0 10px;
       }
       p {
+        @include between-screen(375px, 1180px) {
+          @include font-style($fw-400, $fs-12, $lh-143);
+        }
         color: $silver-color;
-        @include font-style(
-          $fw-400,
-          $fs-14
-          $lh-143
-        );
+        @include font-style($fw-400, $fs-14, $lh-143);
         margin: 0 0 17px;
       }
       a {
@@ -66,17 +84,18 @@
         background-color: white;
         padding: 5px 10px 5px 5px;
         color: $black-background-color;
-        @include font-style(
-          $fw-400,
-          $fs-15,
-          $lh-133
-        );
+        @include font-style($fw-400, $fs-15, $lh-133);
         svg {
           order: -1;
+        }
+        &:hover {
+          scale: 1.1;
+          transition: 0.5s ease-in;
         }
       }
     }
     article:first-of-type {
+      padding-top: 380px;
       background-image: url("../img/product_photography.webp");
       background-size: cover;
       max-width: 576px;
@@ -84,8 +103,12 @@
       max-height: 600px;
       background-position: center center;
       background-repeat: no-repeat;
+      @include between-screen(375px, 599px) {
+        padding-top: 380px;
+      }
     }
     article:nth-of-type(2) {
+      padding-top: 380px;
       background-image: url("../img/architecture-photography.webp");
       background-size: cover;
       max-width: 576px;
@@ -93,9 +116,12 @@
       max-height: 600px;
       background-position: center center;
       background-repeat: no-repeat;
+      @include between-screen(375px, 599px) {
+        padding-top: 360px;
+      }
     }
     article:nth-of-type(3) {
-      padding-top: 395px;
+      padding-top: 365px;
       background-image: url("../img/drone-photography.webp");
       background-size: cover;
       max-width: 576px;
@@ -103,9 +129,12 @@
       max-height: 600px;
       background-position: center center;
       background-repeat: no-repeat;
+      @include between-screen(375px, 599px) {
+        padding-top: 345px;
+      }
     }
     article:last-of-type {
-      padding-top: 395px;
+      padding-top: 365px;
       background-image: url("../img/wildlife-photography.webp");
       background-size: cover;
       max-width: 576px;
@@ -113,6 +142,9 @@
       max-height: 600px;
       background-position: center center;
       background-repeat: no-repeat;
+      @include between-screen(375px, 599px) {
+        padding-top: 345px;
+      }
     }
   }
 }

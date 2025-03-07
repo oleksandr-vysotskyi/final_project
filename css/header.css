@@ -63,6 +63,7 @@ header li:last-of-type {
 }
 header li:last-of-type:hover {
   scale: 1.1;
+  transition: 0.5s ease-in;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   header li:last-of-type {

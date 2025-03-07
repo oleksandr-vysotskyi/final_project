@@ -57,7 +57,7 @@
 @media screen and (min-width: 375px) and (max-width: 430px) {
   .about .about-info p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 143%;
     width: 80%;
     min-width: 200px;
@@ -86,7 +86,7 @@
   display: flex;
   gap: 6px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 100%;
   color: #fff;
 }
