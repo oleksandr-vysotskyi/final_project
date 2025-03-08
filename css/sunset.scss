@@ -1,6 +1,10 @@
 @import "variables";
 
 .sunset {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
   background-image: url("../img/mountain.webp");
   background-size: cover;
   background-position: center center;
@@ -8,26 +12,18 @@
   max-width: 100%;
   height: 80vh;
   max-height: 600px;
-  padding: 260px 0;
-  @include between-screen(375px, 768px) {
-    padding: 260px 12px
-  }
-  .container {
+  @include between-screen(375px, 1225px) {
     justify-content: end;
-    @include between-screen(375px, 1180px) {
-      justify-content: center;
-      align-items: center;
-    }
-    @include between-screen(375px, 768px) {
-      justify-content: center;
-      align-items: center;
-    }
+    align-items: center;
   }
+  @include between-screen(375px, 768px) {
+    padding: 0 12px;
+  }
+
   article {
-    @include between-screen(375px, 1180px) {
+    @include between-screen(375px, 1225px) {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
     }
   }
@@ -37,11 +33,14 @@
     letter-spacing: 0.14em;
     text-transform: uppercase;
     max-width: 206px;
+    @include between-screen(375px, 1180px) {
+      text-align: center;
+    }
   }
   p {
     color: $silver-color;
     @include font-style($fw-400, $fs-14, $lh-143);
-    max-width: 298px;
+    max-width: 297px;
   }
 
   .icons {
@@ -52,6 +51,7 @@
       position: relative;
       right: 40px;
       padding: 200px 0 0 0;
+      margin: 0 0 40px;
       @include between-screen(375px, 1225px) {
         position: static;
         justify-content: center;

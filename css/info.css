@@ -71,7 +71,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding: 0 32px 30px 32px;
+  padding: 0 30px 30px 32px;
   flex: 1 1 576px;
   max-width: 576px;
   height: 65vh;
@@ -87,6 +87,7 @@
     justify-content: end;
     align-items: center;
     text-align: center;
+    padding: 0 15px 30px 15px;
   }
 }
 .info .info-read article h4 {

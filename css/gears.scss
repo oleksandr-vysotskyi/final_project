@@ -1,6 +1,12 @@
 @import "variables";
 
 .gears {
+  @include between-screen(375px, 1225px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $black-background-color;
+  }
   .container-gears {
     display: flex;
     @include between-screen(375px, 1225px) {
@@ -34,8 +40,8 @@
       padding-left: 0;
     }
     @include between-screen(769px, 1225px) {
+      padding: 150px 0 150px 0;
       align-items: center;
-      padding: 150px 0 150px;
     }
     h4 {
       letter-spacing: 0.14em;
@@ -54,6 +60,9 @@
       color: $white-color;
       max-width: 514px;
       margin: 0 0 20px;
+      @include between-screen(375px, 520px) {
+        max-width: 400px;
+      }
       @include between-screen(375px, 1225px) {
         text-align: center;
         @include font-style($fw-400, $fs-12, $lh-143);
@@ -95,7 +104,7 @@
     justify-content: end;
     @include between-screen(375px, 1225px) {
       justify-content: center;
-      width: 80vw;
+      width: 100dvw;
     }
     ul {
       display: flex;

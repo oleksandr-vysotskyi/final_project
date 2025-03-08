@@ -1,3 +1,11 @@
+@media screen and (min-width: 375px) and (max-width: 1225px) {
+  .gears {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+  }
+}
 .gears .container-gears {
   display: flex;
 }
@@ -35,8 +43,8 @@
 }
 @media screen and (min-width: 769px) and (max-width: 1225px) {
   .gears .gear-tools {
+    padding: 150px 0 150px 0;
     align-items: center;
-    padding: 150px 0 150px;
   }
 }
 .gears .gear-tools h4 {
@@ -62,6 +70,11 @@
   color: #fff;
   max-width: 514px;
   margin: 0 0 20px;
+}
+@media screen and (min-width: 375px) and (max-width: 520px) {
+  .gears .gear-tools p {
+    max-width: 400px;
+  }
 }
 @media screen and (min-width: 375px) and (max-width: 1225px) {
   .gears .gear-tools p {
@@ -110,7 +123,7 @@
 @media screen and (min-width: 375px) and (max-width: 1225px) {
   .gears .icons {
     justify-content: center;
-    width: 80vw;
+    width: 100dvw;
   }
 }
 .gears .icons ul {
