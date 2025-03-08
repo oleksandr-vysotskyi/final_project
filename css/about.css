@@ -1,10 +1,14 @@
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   background-image: url("../img/background-image.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   max-width: 100%;
   max-height: 80vh;
+  height: 65vh;
   padding: 0 0 41px;
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -17,14 +21,14 @@
 }
 .about .about-info {
   display: flex;
-  padding: 441px 0 14px 0;
+  padding: 0 0 14px 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 @media screen and (min-width: 375px) and (max-width: 896px) {
   .about .about-info {
-    padding: 441px 12px 12px 20px;
+    padding: 0 12px 12px 20px;
   }
 }
 .about .about-info h3 {
@@ -76,7 +80,11 @@
     min-width: 430px;
   }
 }
-.about .icons ul {
+.about .icons {
+  display: flex;
+  flex-direction: column;
+}
+.about ul {
   display: flex;
   gap: 16px;
   justify-content: end;
@@ -84,12 +92,12 @@
   right: 40px;
 }
 @media screen and (min-width: 375px) and (max-width: 1225px) {
-  .about .icons ul {
+  .about ul {
     position: static;
     justify-content: center;
   }
 }
-.about .icons .icon-item {
+.about .icon-item {
   display: flex;
   gap: 6px;
   font-weight: 400;
@@ -97,6 +105,6 @@
   line-height: 100%;
   color: #fff;
 }
-.about .icons .icon-item svg {
+.about .icon-item svg {
   order: -1;
 }/*# sourceMappingURL=about.css.map */
