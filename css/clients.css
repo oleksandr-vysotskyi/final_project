@@ -1,0 +1,41 @@
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  max-width: 100%;
+  height: 50dvh;
+  max-height: 500px;
+}
+.clients article {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 40px;
+}
+.clients article h3 {
+  color: #fff;
+  text-align: center;
+  margin: 0 0 15px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 105%;
+}
+.clients article p {
+  color: #c0c0c0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+}
+.clients .logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 109px;
+}
+@media screen and (min-width: 375px) and (max-width: 1095px) {
+  .clients .logos {
+    gap: 30px 60px;
+  }
+}/*# sourceMappingURL=clients.css.map */

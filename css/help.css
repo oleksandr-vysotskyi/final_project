@@ -1,0 +1,50 @@
+.help {
+  display: flex;
+  background-color: #000000;
+  max-width: 100vw;
+  height: 40dvh;
+  max-height: 414px;
+}
+.help .container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.help h3 {
+  color: #fff;
+  text-align: center;
+  margin: 0 0 15px;
+  max-width: 571px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 105%;
+}
+.help p {
+  color: #c0c0c0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  margin: 0 0 12px;
+}
+.help a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 14px;
+  max-width: 154px;
+  max-height: 42px;
+  background-color: white;
+  padding: 5px 10px 5px 5px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+}
+.help a svg {
+  order: -1;
+}
+.help a:hover {
+  scale: 1.1;
+  transition: 0.5s ease-in;
+}/*# sourceMappingURL=help.css.map */
