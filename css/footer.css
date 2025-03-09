@@ -1,0 +1,87 @@
+footer {
+  background-color: #000000;
+}
+footer .container {
+  display: inherit;
+}
+footer .footer-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 100px 0 36px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #fff;
+}
+footer a svg {
+  margin: 0 0 20px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 154%;
+  color: #c0c0c0;
+}
+footer .footer-miscellaneous {
+  display: flex;
+  gap: 55px;
+}
+footer .footer-miscellaneous ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-miscellaneous li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  color: #c0c0c0;
+}
+footer .footer-miscellaneous li:first-of-type {
+  text-transform: uppercase;
+}
+footer .footer-miscellaneous a {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 143%;
+  color: #fff;
+}
+footer .footer-newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 0 40px;
+  border-bottom: 2px solid #fff;
+}
+footer .footer-newsletter h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 20px;
+}
+footer .footer-newsletter p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 154%;
+  color: #c0c0c0;
+}
+footer .footer-newsletter .newsletter-rectangle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  min-width: 458px;
+  min-height: 52px;
+  background-color: white;
+}
+footer .footer-newsletter .newsletter-rectangle span {
+  display: inline-flex;
+  border-radius: 11px;
+  min-width: 63px;
+  min-height: 30px;
+  background-color: black;
+}/*# sourceMappingURL=footer.css.map */

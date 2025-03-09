@@ -1,0 +1,79 @@
+@import "variables";
+
+footer {
+  background-color: $black-background-color;
+  .container {
+    display: inherit;
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 100px 0 36px;
+    flex-wrap: wrap;
+    border-bottom: 2px solid $white-color;
+  }
+  a svg {
+    margin: 0 0 20px;
+  }
+  p {
+    @include font-style($fw-400, $fs-13, $lh-154);
+    color: $silver-color;
+  }
+  .footer-miscellaneous {
+    display: flex;
+    gap: 55px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    li {
+      @include font-style($fw-400, $fs-14, $lh-143);
+      letter-spacing: 0.14em;
+      color: $silver-color;
+      &:first-of-type {
+        text-transform: uppercase;
+      }
+    }
+    a {
+      @include font-style($fw-400, $fs-13, $lh-143);
+      color: $white-color;
+    }
+  }
+  .footer-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 0 40px;
+    border-bottom: 2px solid $white-color;
+    h4 {
+      @include font-style($fw-400, $fs-14, $lh-143);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: $white-color;
+      margin: 0 0 20px;
+    }
+    p {
+      @include font-style($fw-400, $fs-13, $lh-154);
+      color: $silver-color;
+    }
+    .newsletter-rectangle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      min-width: 458px;
+      min-height: 52px;
+      background-color: white;
+      span {
+        display: inline-flex;
+        border-radius: 11px;
+        min-width: 63px;
+        min-height: 30px;
+        background-color: black;
+      }
+    }
+  }
+}
