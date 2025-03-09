@@ -17,12 +17,18 @@
     margin: 0 0 15px;
     max-width: 571px;
     @include font-style($fw-400, $fs-40, $lh-105);
+    @include between-screen(375px, 768px) {
+      @include font-style($fw-400, $fs-24, $lh-105);
+    }
   }
   p {
     color: $silver-color;
     text-align: center;
     @include font-style($fw-400, $fs-24, $lh-125);
     margin: 0 0 12px;
+    @include between-screen(375px, 768px) {
+        @include font-style($fw-400, $fs-23, $lh-125);
+      }
   }
   a {
     display: flex;
