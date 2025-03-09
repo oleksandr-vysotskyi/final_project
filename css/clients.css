@@ -7,6 +7,11 @@
   height: 50dvh;
   max-height: 500px;
 }
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .clients {
+    padding: 12px 12px;
+  }
+}
 .clients article {
   display: flex;
   flex-flow: column wrap;

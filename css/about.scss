@@ -13,7 +13,7 @@
   height: 65vh;
   padding: 0 0 41px;
   @include between-screen(375px, 768px) {
-    padding: 0 12px;
+    padding: 12px 12px;
   }
   .container {
     justify-content: center;

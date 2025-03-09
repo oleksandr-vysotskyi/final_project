@@ -15,7 +15,7 @@
       height: 100dvh;
       background-color: $black-background-color;
       @include between-screen(375px, 768px) {
-        padding: 0 12px;
+        padding: 12px 12px;
       }
     }
   }
