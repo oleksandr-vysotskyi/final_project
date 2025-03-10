@@ -6,7 +6,7 @@
     padding-top: 220px;
   }
   @include between-screen(375px, 768px) {
-    padding: 120px 12px 50px 12px;
+    padding: 60px 12px 50px 12px;
   }
   background-color: $black-background-color;
   .container {

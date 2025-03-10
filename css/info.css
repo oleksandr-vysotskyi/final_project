@@ -9,7 +9,7 @@
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .info {
-    padding: 120px 12px 50px 12px;
+    padding: 60px 12px 50px 12px;
   }
 }
 .info .container {
