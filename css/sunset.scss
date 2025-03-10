@@ -13,6 +13,7 @@
   height: 80vh;
   max-height: 600px;
   gap: 200px;
+  padding: 0 0 40px;
   @include between-screen(375px, 932px) {
     gap: 100px;
   }
@@ -30,50 +31,50 @@
       flex-direction: column;
       align-items: center;
     }
-  }
-  h3 {
-    color: $white-color;
-    @include font-style($fw-400, $fs-14, $lh-143);
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    max-width: 206px;
-    @include between-screen(375px, 1180px) {
-      text-align: center;
-    }
-  }
-  p {
-    color: $silver-color;
-    @include font-style($fw-400, $fs-14, $lh-143);
-    max-width: 297px;
-    @include between-screen(375px, 1225px) {
-      max-width: 320px;
-    }
-  }
-
-  .icons {
-    ul {
-      display: flex;
-      gap: 16px;
-      justify-content: end;
-      position: relative;
-      right: 40px;
-      margin: 0 0 40px;
-      @include between-screen(375px, 1225px) {
-        position: static;
-        justify-content: center;
-      }
-      @include between-screen(375px, 768px) {
-        margin: 0 0 20px;
-      }
-    }
-    .icon-item {
-      display: flex;
-      gap: 6px;
-      @include font-style($fw-400, $fs-12, $lh-100);
+    h3 {
       color: $white-color;
-      svg {
-        order: -1;
+      @include font-style($fw-400, $fs-14, $lh-143);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      max-width: 206px;
+      @include between-screen(375px, 1180px) {
+        text-align: center;
       }
+    }
+    p {
+      color: $silver-color;
+      @include font-style($fw-400, $fs-14, $lh-143);
+      max-width: 297px;
+      @include between-screen(375px, 1225px) {
+        max-width: 320px;
+      }
+    }
+  }
+  .icons {
+    position: relative;
+  }
+  ul {
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+    position: absolute;
+    right: 40px;
+    min-width: 300px;
+    @include between-screen(375px, 1225px) {
+      position: static;
+      justify-content: center;
+    }
+    @include between-screen(375px, 768px) {
+      margin: 0 0 20px;
+    }
+  }
+  .icon-item {
+    display: flex;
+    gap: 6px;
+    @include font-style($fw-400, $fs-12, $lh-100);
+    color: $white-color;
+    svg {
+      order: -1;
     }
   }
 }

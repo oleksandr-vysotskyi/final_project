@@ -150,4 +150,13 @@
 }
 .info .info-read article:last-of-type {
   background-image: url("../img/wildlife-photography.webp");
+}
+
+.circle::before {
+  content: "";
+  display: inline-flex;
+  min-height: 32px;
+  min-width: 32px;
+  background-color: #000000;
+  border-radius: 100%;
 }/*# sourceMappingURL=info.css.map */

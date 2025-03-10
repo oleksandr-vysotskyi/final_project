@@ -11,6 +11,7 @@
   height: 80vh;
   max-height: 600px;
   gap: 200px;
+  padding: 0 0 40px;
 }
 @media screen and (min-width: 375px) and (max-width: 932px) {
   .sunset {
@@ -35,7 +36,7 @@
     align-items: center;
   }
 }
-.sunset h3 {
+.sunset article h3 {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
@@ -45,11 +46,11 @@
   max-width: 206px;
 }
 @media screen and (min-width: 375px) and (max-width: 1180px) {
-  .sunset h3 {
+  .sunset article h3 {
     text-align: center;
   }
 }
-.sunset p {
+.sunset article p {
   color: #c0c0c0;
   font-weight: 400;
   font-size: 14px;
@@ -57,30 +58,33 @@
   max-width: 297px;
 }
 @media screen and (min-width: 375px) and (max-width: 1225px) {
-  .sunset p {
+  .sunset article p {
     max-width: 320px;
   }
 }
-.sunset .icons ul {
+.sunset .icons {
+  position: relative;
+}
+.sunset ul {
   display: flex;
   gap: 16px;
   justify-content: end;
-  position: relative;
+  position: absolute;
   right: 40px;
-  margin: 0 0 40px;
+  min-width: 300px;
 }
 @media screen and (min-width: 375px) and (max-width: 1225px) {
-  .sunset .icons ul {
+  .sunset ul {
     position: static;
     justify-content: center;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .sunset .icons ul {
+  .sunset ul {
     margin: 0 0 20px;
   }
 }
-.sunset .icons .icon-item {
+.sunset .icon-item {
   display: flex;
   gap: 6px;
   font-weight: 400;
@@ -88,6 +92,6 @@
   line-height: 100%;
   color: #fff;
 }
-.sunset .icons .icon-item svg {
+.sunset .icon-item svg {
   order: -1;
 }/*# sourceMappingURL=sunset.css.map */

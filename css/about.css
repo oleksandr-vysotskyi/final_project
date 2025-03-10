@@ -83,12 +83,13 @@
 .about .icons {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .about ul {
   display: flex;
   gap: 16px;
   justify-content: end;
-  position: relative;
+  position: absolute;
   right: 40px;
 }
 @media screen and (min-width: 375px) and (max-width: 1225px) {

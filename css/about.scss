@@ -64,12 +64,13 @@
   .icons {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   ul {
     display: flex;
     gap: 16px;
     justify-content: end;
-    position: relative;
+    position: absolute;
     right: 40px;
     @include between-screen(375px, 1225px) {
       position: static;

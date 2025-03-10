@@ -112,25 +112,38 @@ footer {
       @include font-style($fw-400, $fs-13, $lh-154);
       color: $silver-color;
     }
-    .newsletter-rectangle {
+    .newsletter-form {
       display: flex;
       justify-content: end;
       align-items: center;
       padding: 0 6px 0;
       border: 1px solid $cyan-blue-very-light-color;
       border-radius: 12px;
-      width: 458px;
-      max-width: 458px;
+      width: 390px;
+      max-width: 390px;
       min-height: 52px;
       background-color: $white-color;
       @include between-screen(375px, 500px) {
         max-width: 360px;
       }
-      span {
+      input {
         display: inline-flex;
+        cursor: pointer;
+        border: none;
+        outline: none;
         border-radius: 11px;
         min-width: 63px;
         min-height: 30px;
+      }
+      button {
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 11px;
+        min-width: 63px;
+        min-height: 30px;
+        color: $white-color;
         background-color: $black-background-color;
       }
     }
