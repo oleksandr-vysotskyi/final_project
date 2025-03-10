@@ -61,29 +61,4 @@
       }
     }
   }
-  .icons {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  ul {
-    display: flex;
-    gap: 16px;
-    justify-content: end;
-    position: absolute;
-    right: 40px;
-    @include between-screen(375px, 1225px) {
-      position: static;
-      justify-content: center;
-    }
-  }
-  .icon-item {
-    display: flex;
-    gap: 6px;
-    @include font-style($fw-400, $fs-12, $lh-100);
-    color: $white-color;
-    svg {
-      order: -1;
-    }
-  }
 }

@@ -1,3 +1,4 @@
+@import "_variables";
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,58 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  ul {
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+    position: absolute;
+    right: 40px;
+    min-width: 400px;
+    @include between-screen(375px, 1225px) {
+      position: static;
+      justify-content: center;
+    }
+    li {
+      display: flex;
+      gap: 6px;
+      @include font-style($fw-400, $fs-12, $lh-100);
+      color: $white-color;
+      &:first-of-type::before {
+        content: "";
+        background-image: url("../img/time-icon.svg");
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+      }
+      &:nth-of-type(2):before {
+        content: "";
+        background-image: url("../img/circle-icon.svg");
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+      }
+      &:nth-of-type(3):before {
+        content: "";
+        background-image: url("../img/iso-icon.svg");
+        display: inline-block;
+        width: 32px;
+        height: 16px;
+      }
+      &:last-of-type::before {
+        content: "";
+        background-image: url("../img/location-icon.svg");
+        display: inline-block;
+        width: 10px;
+        height: 16px;
+      }
+    }
+  }
 }
 
 @import url("header.css");

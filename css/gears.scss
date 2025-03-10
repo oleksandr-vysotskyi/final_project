@@ -101,33 +101,12 @@
     flex: 1 1 50%;
     justify-content: end;
     align-items: end;
-    padding: 0 0 40px;
+    padding: 0 0 20px;
     position: relative;
     @include between-screen(375px, 1225px) {
-      justify-content: center;
-      width: 90vw;
-    }
-    ul {
-      display: flex;
-      gap: 16px;
       justify-content: end;
-      position: absolute;
-      right: 40px;
-      @include between-screen(375px, 1225px) {
-        position: static;
-      }
-      @include between-screen(375px, 768px) {
-        margin: 0 0 20px;
-      }
-    }
-    .icon-item {
-      display: flex;
-      gap: 6px;
-      @include font-style($fw-400, $fs-12, $lh-100);
-      color: $white-color;
-      svg {
-        order: -1;
-      }
+      align-items: center;
+      width: 90vw;
     }
   }
 }

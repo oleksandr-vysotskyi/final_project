@@ -61,37 +61,4 @@
   .sunset article p {
     max-width: 320px;
   }
-}
-.sunset .icons {
-  position: relative;
-}
-.sunset ul {
-  display: flex;
-  gap: 16px;
-  justify-content: end;
-  position: absolute;
-  right: 40px;
-  min-width: 300px;
-}
-@media screen and (min-width: 375px) and (max-width: 1225px) {
-  .sunset ul {
-    position: static;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .sunset ul {
-    margin: 0 0 20px;
-  }
-}
-.sunset .icon-item {
-  display: flex;
-  gap: 6px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 100%;
-  color: #fff;
-}
-.sunset .icon-item svg {
-  order: -1;
 }/*# sourceMappingURL=sunset.css.map */

@@ -79,33 +79,4 @@
     width: 90%;
     min-width: 430px;
   }
-}
-.about .icons {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.about ul {
-  display: flex;
-  gap: 16px;
-  justify-content: end;
-  position: absolute;
-  right: 40px;
-}
-@media screen and (min-width: 375px) and (max-width: 1225px) {
-  .about ul {
-    position: static;
-    justify-content: center;
-  }
-}
-.about .icon-item {
-  display: flex;
-  gap: 6px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 100%;
-  color: #fff;
-}
-.about .icon-item svg {
-  order: -1;
 }/*# sourceMappingURL=about.css.map */
