@@ -138,6 +138,11 @@
     position: static;
   }
 }
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .gears .icons ul {
+    margin: 0 0 20px;
+  }
+}
 .gears .icons .icon-item {
   display: flex;
   gap: 6px;

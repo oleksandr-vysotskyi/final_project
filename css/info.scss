@@ -2,11 +2,11 @@
 
 .info {
   padding: 120px 0 100px 0;
-  @include between-screen(768px, 900px) {
-    padding-top: 220px;
+  @include between-screen(769px, 900px) {
+    padding: 50px 0 50px 0;
   }
   @include between-screen(375px, 768px) {
-    padding: 60px 12px 50px 12px;
+    padding: 25px 12px 25px 12px;
   }
   background-color: $black-background-color;
   .container {
@@ -30,6 +30,9 @@
       margin: 0 0 42px;
       @include between-screen(375px, 430px) {
         @include font-style($fw-400, $fs-16, $lh-130);
+      }
+      @include between-screen(375px, 768px) {
+        margin: 0 0 15px;
       }
     }
   }

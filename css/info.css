@@ -2,14 +2,14 @@
   padding: 120px 0 100px 0;
   background-color: #000000;
 }
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 769px) and (max-width: 900px) {
   .info {
-    padding-top: 220px;
+    padding: 50px 0 50px 0;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .info {
-    padding: 60px 12px 50px 12px;
+    padding: 25px 12px 25px 12px;
   }
 }
 .info .container {
@@ -46,6 +46,11 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .info .info-title p {
+    margin: 0 0 15px;
   }
 }
 .info .info-read {

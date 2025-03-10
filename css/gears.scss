@@ -115,6 +115,9 @@
       @include between-screen(375px, 1225px) {
         position: static;
       }
+      @include between-screen(375px, 768px) {
+        margin: 0 0 20px;
+      }
     }
     .icon-item {
       display: flex;

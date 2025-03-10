@@ -4,7 +4,6 @@ $white-color: #fff;
 $silver-color: #c0c0c0;
 $cyan-blue-very-light-color: #e5e7eb;
 
-
 $fw-400: 400;
 $fw-600: 600;
 
@@ -36,9 +35,14 @@ $lh-154: 154%;
   line-height: $line-height;
 }
 
-
 @mixin between-screen($min, $max) {
   @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin between-screen-height($min-height, $max-height) {
+  @media screen and (min-height: $min-height) and (max-height: $max-height) {
     @content;
   }
 }

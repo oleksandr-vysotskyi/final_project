@@ -7,6 +7,11 @@ footer {
     padding: 12px 12px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 920px) {
+  footer {
+    padding: 0 0 20px;
+  }
+}
 footer .container {
   display: inherit;
 }
@@ -54,6 +59,7 @@ footer p {
 @media screen and (min-width: 375px) and (max-width: 919px) {
   footer p {
     margin: 0 0 20px;
+    text-align: center;
   }
 }
 footer .footer-miscellaneous {
@@ -94,6 +100,11 @@ footer .footer-newsletter {
   padding: 36px 0 40px;
   margin: 0 0 56px;
   border-bottom: 2px solid #fff;
+}
+@media screen and (min-width: 375px) and (max-width: 920px) {
+  footer .footer-newsletter {
+    margin: 0 0 20px;
+  }
 }
 @media screen and (min-width: 920px) and (max-width: 1225px) {
   footer .footer-newsletter {
