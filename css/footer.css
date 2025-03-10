@@ -181,6 +181,10 @@ footer .footer-newsletter .newsletter-form button {
   color: #fff;
   background-color: #000000;
 }
+footer .footer-newsletter .newsletter-form button:hover {
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
 footer .footer-copyright {
   display: flex;
   justify-content: space-between;

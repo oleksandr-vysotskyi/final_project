@@ -145,6 +145,10 @@ footer {
         @include font-style($fw-400, $fs-15, $lh-133);
         color: $white-color;
         background-color: $black-background-color;
+        &:hover {
+          scale: 1.1;
+          transition: 0.5s ease-in-out;
+        }
       }
     }
   }
@@ -168,7 +172,7 @@ footer {
   ul {
     display: flex;
     gap: 20px;
-    li > a >svg {
+    li > a > svg {
       &:hover {
         scale: 1.5;
         transition: 0.5s ease-in-out;
