@@ -2,8 +2,8 @@
 
 .info {
   padding: 120px 0 100px 0;
-  @include between-screen(769px, 900px) {
-    padding: 50px 0 50px 0;
+  @include between-screen(769px, 950px) {
+    padding: 40px 0 40px 0;
   }
   @include between-screen(375px, 768px) {
     padding: 25px 12px 25px 12px;
