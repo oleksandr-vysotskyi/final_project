@@ -13,6 +13,9 @@
   height: 80vh;
   max-height: 600px;
   gap: 200px;
+  @include between-screen(375px, 932px) {
+    gap: 100px;
+  }
   @include between-screen(375px, 1225px) {
     justify-content: end;
     align-items: center;

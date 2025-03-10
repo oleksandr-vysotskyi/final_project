@@ -18,11 +18,17 @@
     display: flex;
     flex-flow: column wrap;
     gap: 40px;
+    @include between-screen(375px, 932px) {
+      gap: 20px;
+    }
     h3 {
       color: $white-color;
       text-align: center;
       margin: 0 0 15px;
       @include font-style($fw-400, $fs-40, $lh-105);
+      @include between-screen(375px, 932px) {
+        margin: 0 0 10px;
+      }
     }
     p {
       color: $silver-color;

@@ -12,6 +12,11 @@
   max-height: 600px;
   gap: 200px;
 }
+@media screen and (min-width: 375px) and (max-width: 932px) {
+  .sunset {
+    gap: 100px;
+  }
+}
 @media screen and (min-width: 375px) and (max-width: 1225px) {
   .sunset {
     justify-content: end;
