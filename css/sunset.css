@@ -51,6 +51,11 @@
   line-height: 143%;
   max-width: 297px;
 }
+@media screen and (min-width: 375px) and (max-width: 1225px) {
+  .sunset p {
+    max-width: 320px;
+  }
+}
 .sunset .icons ul {
   display: flex;
   gap: 16px;

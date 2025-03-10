@@ -42,6 +42,9 @@
     color: $silver-color;
     @include font-style($fw-400, $fs-14, $lh-143);
     max-width: 297px;
+    @include between-screen(375px, 1225px) {
+      max-width: 320px;
+    }
   }
 
   .icons {

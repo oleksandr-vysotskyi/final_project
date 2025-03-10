@@ -6,6 +6,11 @@
     background-color: #000000;
   }
 }
+@media screen and (min-width: 375px) and (max-width: 1225px) and (min-width: 375px) and (max-width: 768px) {
+  .gears {
+    padding: 12px 12px;
+  }
+}
 .gears .container-gears {
   display: flex;
 }
@@ -13,13 +18,8 @@
   .gears .container-gears {
     flex-direction: column;
     align-items: center;
-    height: 100dvh;
+    height: 100vh;
     background-color: #000000;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 1225px) and (min-width: 375px) and (max-width: 768px) {
-  .gears .container-gears {
-    padding: 12px 12px;
   }
 }
 .gears .gear-tools {

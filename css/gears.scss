@@ -6,17 +6,17 @@
     flex-direction: column;
     align-items: center;
     background-color: $black-background-color;
+    @include between-screen(375px, 768px) {
+      padding: 12px 12px;
+    }
   }
   .container-gears {
     display: flex;
     @include between-screen(375px, 1225px) {
       flex-direction: column;
       align-items: center;
-      height: 100dvh;
+      height: 100vh;
       background-color: $black-background-color;
-      @include between-screen(375px, 768px) {
-        padding: 12px 12px;
-      }
     }
   }
   .gear-tools {

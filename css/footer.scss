@@ -2,6 +2,10 @@
 
 footer {
   background-color: $black-background-color;
+  padding: 0 0 60px;
+  @include between-screen(375px, 768px) {
+    padding: 12px 12px;
+  }
   .container {
     display: inherit;
   }
@@ -12,17 +16,42 @@ footer {
     padding: 100px 0 36px;
     flex-wrap: wrap;
     border-bottom: 2px solid $white-color;
-  }
-  a svg {
-    margin: 0 0 20px;
+    @include between-screen(375px, 919px) {
+      padding: 36px 0 36px;
+    }
+    .logo {
+      @include between-screen(375px, 919px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    @include between-screen(920px, 1225px) {
+      justify-content: space-around;
+    }
+    @include between-screen(375px, 919px) {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    a svg {
+      margin: 0 0 20px;
+    }
   }
   p {
     @include font-style($fw-400, $fs-13, $lh-154);
     color: $silver-color;
+    @include between-screen(375px, 919px) {
+      margin: 0 0 20px;
+    }
   }
   .footer-miscellaneous {
     display: flex;
     gap: 55px;
+    padding: 0 80px 0 0;
+    @include between-screen(375px, 1225px) {
+      padding: 0;
+    }
     ul {
       display: flex;
       flex-direction: column;
@@ -46,7 +75,25 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 36px 0 40px;
+    margin: 0 0 56px;
     border-bottom: 2px solid $white-color;
+    @include between-screen(920px, 1225px) {
+      justify-content: space-around;
+    }
+    @include between-screen(375px, 919px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .newsletter-items {
+      @include between-screen(375px, 919px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
     h4 {
       @include font-style($fw-400, $fs-14, $lh-143);
       letter-spacing: 0.14em;
@@ -60,19 +107,51 @@ footer {
     }
     .newsletter-rectangle {
       display: flex;
-      justify-content: space-between;
+      justify-content: end;
       align-items: center;
-      border: 1px solid #e5e7eb;
+      padding: 0 6px 0;
+      border: 1px solid $cyan-blue-very-light-color;
       border-radius: 12px;
-      min-width: 458px;
+      width: 458px;
+      max-width: 458px;
       min-height: 52px;
-      background-color: white;
+      background-color: $white-color;
+      @include between-screen(375px, 500px) {
+        max-width: 360px;
+      }
       span {
         display: inline-flex;
         border-radius: 11px;
         min-width: 63px;
         min-height: 30px;
-        background-color: black;
+        background-color: $black-background-color;
+      }
+    }
+  }
+  .footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include between-screen(920px, 1225px) {
+      justify-content: space-around;
+    }
+    @include between-screen(375px, 919px) {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  p {
+    @include font-style($fw-400, $fs-14, $lh-143);
+    color: $silver-color;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    li > a >svg {
+      &:hover {
+        scale: 1.5;
+        transition: 0.5s ease-in-out;
       }
     }
   }
