@@ -138,11 +138,11 @@ footer {
       button {
         text-align: center;
         cursor: pointer;
-        outline: none;
         border: none;
         border-radius: 11px;
         min-width: 63px;
         min-height: 30px;
+        @include font-style($fw-400, $fs-15, $lh-133);
         color: $white-color;
         background-color: $black-background-color;
       }

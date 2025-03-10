@@ -171,11 +171,13 @@ footer .footer-newsletter .newsletter-form input {
 footer .footer-newsletter .newsletter-form button {
   text-align: center;
   cursor: pointer;
-  outline: none;
   border: none;
   border-radius: 11px;
   min-width: 63px;
   min-height: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
   color: #fff;
   background-color: #000000;
 }
