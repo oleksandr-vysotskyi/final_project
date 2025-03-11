@@ -80,4 +80,13 @@ body {
   display: inline-block;
   width: 10px;
   height: 16px;
+}
+
+.circle::before {
+  content: "";
+  display: inline-flex;
+  min-height: 32px;
+  min-width: 32px;
+  background-color: #000000;
+  border-radius: 100%;
 }/*# sourceMappingURL=styles.css.map */
