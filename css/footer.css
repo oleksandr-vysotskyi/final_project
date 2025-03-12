@@ -147,26 +147,27 @@ footer .footer-newsletter .newsletter-form {
   justify-content: end;
   align-items: center;
   padding: 0 6px 0 12px;
-  border: 1px solid #e5e7eb;
   border-radius: 12px;
-  max-width: 452px;
-  min-height: 52px;
+  border: 1px solid #e5e7eb;
   background-color: #fff;
+}
+@media screen and (min-width: 375px) and (max-width: 550px) {
+  footer .footer-newsletter .newsletter-form {
+    max-width: 360px;
+  }
 }
 footer .footer-newsletter .newsletter-form input {
   display: inline-flex;
   cursor: pointer;
   border: none;
   outline: none;
+  border-radius: 12px;
+  width: 458px;
+  min-height: 52px;
   text-overflow: ellipsis;
   font-weight: 400;
   font-size: 14px;
   line-height: 133%;
-}
-@media screen and (min-width: 375px) and (max-width: 500px) {
-  footer .footer-newsletter .newsletter-form input {
-    max-width: 360px;
-  }
 }
 footer .footer-newsletter .newsletter-form button {
   text-align: center;

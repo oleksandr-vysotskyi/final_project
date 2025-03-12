@@ -117,21 +117,22 @@ footer {
       justify-content: end;
       align-items: center;
       padding: 0 6px 0 12px;
-      border: 1px solid $cyan-blue-very-light-color;
       border-radius: 12px;
-      max-width: 452px;
-      min-height: 52px;
+      border: 1px solid $cyan-blue-very-light-color;
       background-color: $white-color;
+      @include between-screen(375px, 550px) {
+        max-width: 360px;
+      }
       input {
         display: inline-flex;
         cursor: pointer;
         border: none;
         outline: none;
+        border-radius: 12px;
+        width: 458px;
+        min-height: 52px;
         text-overflow: ellipsis;
         @include font-style($fw-400, $fs-14, $lh-133);
-        @include between-screen(375px, 500px) {
-          max-width: 360px;
-        }
       }
       button {
         text-align: center;
