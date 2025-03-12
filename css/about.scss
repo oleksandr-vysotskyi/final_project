@@ -27,7 +27,7 @@
     @include between-screen(375px, 896px) {
       padding: 0 12px 12px 20px;
     }
-    h3 {
+    h2 {
       @include font-style($fw-400, $fs-14, $lh-143);
       letter-spacing: 0.14em;
       text-transform: uppercase;
