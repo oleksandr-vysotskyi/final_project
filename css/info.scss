@@ -54,7 +54,7 @@
       display: flex;
       flex-direction: column;
       justify-content: end;
-      padding: 0 30px 30px 32px;
+      // padding: 0 30px 30px 32px;
       flex: 1 1 576px;
       max-width: 576px;
       height: 65vh;
@@ -62,13 +62,26 @@
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      @include between-screen(375px, 1185px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-        text-align: center;
-        padding: 0 15px 30px 15px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        bottom: -30px;
+        z-index: 1;
+      }
+      .text-container {
+        left: 30px;
+        position: relative;
+        z-index: 2;
+        @include between-screen(375px, 1185px) {
+          position: static;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
       }
       h3 {
         letter-spacing: 0.14em;
@@ -78,6 +91,7 @@
         margin: 0 0 10px;
       }
       p {
+        max-width: 516px;
         @include between-screen(375px, 1180px) {
           @include font-style($fw-400, $fs-12, $lh-143);
         }
@@ -105,23 +119,11 @@
         }
       }
     }
-    article:first-of-type {
-      background-image: url("../img/product_photography.webp");
-    }
-    article:nth-of-type(2) {
-      background-image: url("../img/architecture-photography.webp");
-    }
-    article:nth-of-type(3) {
-      background-image: url("../img/drone-photography.webp");
-    }
-    article:last-of-type {
-      background-image: url("../img/wildlife-photography.webp");
-    }
   }
 }
 .circle::before {
-  content: '';
-  display:inline-flex;
+  content: "";
+  display: inline-flex;
   min-height: 32px;
   min-width: 32px;
   background-color: $black-background-color;

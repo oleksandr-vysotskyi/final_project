@@ -76,7 +76,6 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding: 0 30px 30px 32px;
   flex: 1 1 576px;
   max-width: 576px;
   height: 65vh;
@@ -84,15 +83,29 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  position: relative;
+}
+.info .info-read article img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: -30px;
+  z-index: 1;
+}
+.info .info-read article .text-container {
+  left: 30px;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (min-width: 375px) and (max-width: 1185px) {
-  .info .info-read article {
+  .info .info-read article .text-container {
+    position: static;
     display: flex;
     flex-direction: column;
-    justify-content: end;
     align-items: center;
     text-align: center;
-    padding: 0 15px 30px 15px;
   }
 }
 .info .info-read article h3 {
@@ -105,6 +118,7 @@
   margin: 0 0 10px;
 }
 .info .info-read article p {
+  max-width: 516px;
   color: #c0c0c0;
   font-weight: 400;
   font-size: 14px;
@@ -138,18 +152,6 @@
 .info .info-read article a:hover {
   scale: 1.1;
   transition: 0.5s ease-in;
-}
-.info .info-read article:first-of-type {
-  background-image: url("../img/product_photography.webp");
-}
-.info .info-read article:nth-of-type(2) {
-  background-image: url("../img/architecture-photography.webp");
-}
-.info .info-read article:nth-of-type(3) {
-  background-image: url("../img/drone-photography.webp");
-}
-.info .info-read article:last-of-type {
-  background-image: url("../img/wildlife-photography.webp");
 }
 
 .circle::before {
