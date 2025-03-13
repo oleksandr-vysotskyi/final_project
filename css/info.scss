@@ -72,7 +72,7 @@
       }
       .text-container {
         left: 30px;
-        position: relative;
+        position: absolute;
         z-index: 2;
         @include between-screen(375px, 1185px) {
           position: static;

@@ -96,7 +96,7 @@
 }
 .info .info-read article .text-container {
   left: 30px;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 @media screen and (min-width: 375px) and (max-width: 1185px) {
