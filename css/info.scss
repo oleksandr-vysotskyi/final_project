@@ -120,11 +120,3 @@
     }
   }
 }
-.circle::before {
-  content: "";
-  display: inline-flex;
-  min-height: 32px;
-  min-width: 32px;
-  background-color: $black-background-color;
-  border-radius: 100%;
-}

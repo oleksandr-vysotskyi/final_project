@@ -152,13 +152,4 @@
 .info .info-read article a:hover {
   scale: 1.1;
   transition: 0.5s ease-in;
-}
-
-.circle::before {
-  content: "";
-  display: inline-flex;
-  min-height: 32px;
-  min-width: 32px;
-  background-color: #000000;
-  border-radius: 100%;
 }/*# sourceMappingURL=info.css.map */
