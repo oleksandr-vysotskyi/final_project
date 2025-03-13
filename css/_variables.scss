@@ -40,9 +40,3 @@ $lh-154: 154%;
     @content;
   }
 }
-
-@mixin between-screen-height($min-height, $max-height) {
-  @media screen and (min-height: $min-height) and (max-height: $max-height) {
-    @content;
-  }
-}
