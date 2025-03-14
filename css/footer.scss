@@ -72,6 +72,20 @@ footer {
     a {
       @include font-style($fw-400, $fs-13, $lh-143);
       color: $white-color;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: $white-color;
+        transition: 0.3s ease-in-out;
+      }
+      &:hover::after {
+        width: 100%;
+      }
     }
   }
   .footer-newsletter {

@@ -92,6 +92,20 @@ footer .footer-miscellaneous a {
   font-size: 13px;
   line-height: 143%;
   color: #fff;
+  position: relative;
+}
+footer .footer-miscellaneous a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+footer .footer-miscellaneous a:hover::after {
+  width: 100%;
 }
 footer .footer-newsletter {
   display: flex;
