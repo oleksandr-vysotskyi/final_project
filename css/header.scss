@@ -2,12 +2,15 @@
 
 header {
   padding: 30px 20px 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: $black-background-color;
   @include between-screen(320px, 768px) {
     padding: 12px 12px;
   }
-  background-color: $black-color;
   .container {
-    background-color: $black-color;
+    background-color: $black-background-color;
     @include between-screen(666px, 768px) {
       justify-content: space-around;
     }
@@ -19,7 +22,7 @@ header {
     @include between-screen(769px, 950px) {
       gap: 10px;
     }
-    background-color: $black-color;
+    background-color: $black-background-color;
     @include between-screen(320px, 768px) {
       background-color: transparent;
     }
@@ -31,7 +34,7 @@ header {
     }
   }
   li {
-    background-color: $black-color;
+    background-color: $black-background-color;
     @include between-screen(320px, 768px) {
       background-color: transparent;
     }
@@ -130,7 +133,7 @@ header {
   }
 
   .cd-header {
-    position: relative;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
