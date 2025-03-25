@@ -176,8 +176,8 @@ footer .footer-newsletter .newsletter-form input {
   border: none;
   outline: none;
   border-radius: 12px;
-  width: 458px;
   min-height: 52px;
+  width: 458px;
   text-overflow: ellipsis;
   font-size: clamp(10px, 5vw, 14px);
   font-weight: 400;

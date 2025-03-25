@@ -148,8 +148,8 @@ footer {
         border: none;
         outline: none;
         border-radius: 12px;
-        width: 458px;
         min-height: 52px;
+        width: max(458px, 300px);
         text-overflow: ellipsis;
         font-size: clamp($fs-10, $vw-5, $fs-14);
         @include font-style($fw-400, $lh-133);
