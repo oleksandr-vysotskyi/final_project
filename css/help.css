@@ -7,7 +7,7 @@
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .help {
-    padding: 12px 12px;
+    padding: 12px;
   }
 }
 .help .container {

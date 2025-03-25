@@ -1,12 +1,12 @@
 @import "variables";
 
 .info {
-  padding: 120px 0 100px 0;
+  padding: 120px 0 100px;
   @include between-screen(769px, 950px) {
-    padding: 40px 0 40px 0;
+    padding: 40px 0;
   }
   @include between-screen(375px, 768px) {
-    padding: 25px 12px 30px 12px;
+    padding: 25px 12px 30px;
   }
   background-color: $black-background-color;
   .container {

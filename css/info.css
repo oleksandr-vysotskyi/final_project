@@ -1,15 +1,15 @@
 .info {
-  padding: 120px 0 100px 0;
+  padding: 120px 0 100px;
   background-color: #000000;
 }
 @media screen and (min-width: 769px) and (max-width: 950px) {
   .info {
-    padding: 40px 0 40px 0;
+    padding: 40px 0;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .info {
-    padding: 25px 12px 30px 12px;
+    padding: 25px 12px 30px;
   }
 }
 .info .container {

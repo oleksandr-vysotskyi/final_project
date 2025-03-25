@@ -9,10 +9,10 @@
   height: 50vh;
   max-height: 500px;
   @media (min-height: 375px) and (max-height: 768px) {
-    padding: 12px 12px;
+    padding: 12px;
   }
   @include between-screen(375px, 768px) {
-    padding: 12px 12px;
+    padding: 12px;
   }
   article {
     display: flex;

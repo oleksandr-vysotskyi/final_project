@@ -22,7 +22,7 @@
     align-items: center;
   }
   @include between-screen(375px, 768px) {
-    padding: 12px 12px;
+    padding: 12px;
   }
 
   article {

@@ -6,6 +6,10 @@
     "color-hex-length": null,
     "declaration-block-no-shorthand-property-overrides": null,
     "rule-empty-line-before": null,
-    "media-feature-range-notation": null
+    "media-feature-range-notation": null,
+    "at-rule-empty-line-before": null,
+    "property-no-vendor-prefix": null,
+    "color-function-notation": null,
+    "alpha-value-notation": null
   }
 }

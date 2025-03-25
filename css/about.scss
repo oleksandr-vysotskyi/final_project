@@ -13,14 +13,14 @@
   height: 65vh;
   padding: 0 0 41px;
   @include between-screen(375px, 768px) {
-    padding: 12px 12px;
+    padding: 12px;
   }
   .container {
     justify-content: center;
   }
   .about-info {
     display: flex;
-    padding: 0 0 14px 0;
+    padding: 0 0 14px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
