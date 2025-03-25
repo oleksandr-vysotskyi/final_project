@@ -43,7 +43,7 @@
 }
 @media screen and (min-width: 769px) and (max-width: 1225px) {
   .gears .gear-tools {
-    padding: 0;
+    padding: 10px 0;
     align-items: center;
   }
 }
