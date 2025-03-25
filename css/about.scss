@@ -50,14 +50,6 @@
       text-align: center;
       max-width: 580px;
       color: $silver-color;
-      @include between-screen(375px, 430px) {
-        width: 80%;
-        min-width: 200px;
-      }
-      @include between-screen(431px, 650px) {
-        width: 90%;
-        min-width: 430px;
-      }
     }
   }
 }
