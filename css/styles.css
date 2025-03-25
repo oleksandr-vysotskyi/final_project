@@ -48,8 +48,8 @@ body {
 .icons ul li {
   display: flex;
   gap: 6px;
+  font-size: clamp(10px, 5vw, 12px);
   font-weight: 400;
-  font-size: 12px;
   line-height: 100%;
   color: #fff;
 }

@@ -28,7 +28,8 @@
       padding: 0 12px 12px 20px;
     }
     h2 {
-      @include font-style($fw-400, $fs-14, $lh-143);
+      font-size: clamp($fs-12, $vw-5, $fs-14);
+      @include font-style($fw-400, $lh-143);
       letter-spacing: 0.14em;
       text-transform: uppercase;
       text-align: center;
@@ -36,22 +37,20 @@
       color: $silver-color;
     }
     h1 {
-      @include font-style($fw-400, $fs-54, $lh-110);
+      font-size: clamp($fs-38, $vw-5, $fs-54);
+      @include font-style($fw-400, $lh-110);
       text-align: center;
       max-width: 463px;
       color: $white-color;
       margin: 0 0 18px;
-      @include between-screen(375px, 768px) {
-        @include font-style($fw-400, $fs-38, $lh-110);
-      }
     }
     p {
-      @include font-style($fw-400, $fs-14, $lh-143);
+      font-size: clamp($fs-12, $vw-5, $fs-14);
+      @include font-style($fw-400, $lh-143);
       text-align: center;
       max-width: 580px;
       color: $silver-color;
       @include between-screen(375px, 430px) {
-        @include font-style($fw-400, $fs-12, $lh-143);
         width: 80%;
         min-width: 200px;
       }

@@ -38,8 +38,8 @@
 }
 .sunset article h3 {
   color: #fff;
+  font-size: clamp(12px, 5vw, 14px);
   font-weight: 400;
-  font-size: 14px;
   line-height: 143%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -52,8 +52,8 @@
 }
 .sunset article p {
   color: #c0c0c0;
+  font-size: clamp(12px, 5vw, 14px);
   font-weight: 400;
-  font-size: 14px;
   line-height: 143%;
   max-width: 297px;
 }

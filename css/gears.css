@@ -50,22 +50,22 @@
 .gears .gear-tools h4 {
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  font-size: clamp(10px, 5vw, 14px);
   font-weight: 400;
-  font-size: 14px;
   line-height: 143%;
   color: #c0c0c0;
   margin: 0 0 6px;
 }
 .gears .gear-tools h5 {
+  font-size: clamp(18px, 5vw, 28px);
   font-weight: 400;
-  font-size: 28px;
   line-height: 114%;
   color: #fff;
   margin: 0 0 14px;
 }
 .gears .gear-tools p {
+  font-size: clamp(10px, 5vw, 14px);
   font-weight: 400;
-  font-size: 14px;
   line-height: 143%;
   color: #fff;
   max-width: 514px;
@@ -79,9 +79,6 @@
 @media screen and (min-width: 375px) and (max-width: 1225px) {
   .gears .gear-tools p {
     text-align: center;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 143%;
   }
 }
 .gears .gear-tools a {
@@ -94,8 +91,8 @@
   background-color: white;
   padding: 5px 10px 5px 5px;
   color: #000000;
+  font-size: clamp(10px, 5vw, 15px);
   font-weight: 400;
-  font-size: 15px;
   line-height: 133%;
 }
 .gears .gear-tools a svg {

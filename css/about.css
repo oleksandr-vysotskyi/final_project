@@ -32,8 +32,8 @@
   }
 }
 .about .about-info h2 {
+  font-size: clamp(12px, 5vw, 14px);
   font-weight: 400;
-  font-size: 14px;
   line-height: 143%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -42,24 +42,17 @@
   color: #c0c0c0;
 }
 .about .about-info h1 {
+  font-size: clamp(38px, 5vw, 54px);
   font-weight: 400;
-  font-size: 54px;
   line-height: 110%;
   text-align: center;
   max-width: 463px;
   color: #fff;
   margin: 0 0 18px;
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .about .about-info h1 {
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 110%;
-  }
-}
 .about .about-info p {
+  font-size: clamp(12px, 5vw, 14px);
   font-weight: 400;
-  font-size: 14px;
   line-height: 143%;
   text-align: center;
   max-width: 580px;
@@ -67,9 +60,6 @@
 }
 @media screen and (min-width: 375px) and (max-width: 430px) {
   .about .about-info p {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 143%;
     width: 80%;
     min-width: 200px;
   }

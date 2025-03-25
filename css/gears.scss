@@ -46,17 +46,20 @@
     h4 {
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      @include font-style($fw-400, $fs-14, $lh-143);
+      font-size: clamp($fs-10, $vw-5, $fs-14);
+      @include font-style($fw-400, $lh-143);
       color: $silver-color;
       margin: 0 0 6px;
     }
     h5 {
-      @include font-style($fw-400, $fs-28, $lh-114);
+      font-size: clamp($fs-18, $vw-5, $fs-28);
+      @include font-style($fw-400, $lh-114);
       color: $white-color;
       margin: 0 0 14px;
     }
     p {
-      @include font-style($fw-400, $fs-14, $lh-143);
+      font-size: clamp($fs-10, $vw-5, $fs-14);
+      @include font-style($fw-400, $lh-143);
       color: $white-color;
       max-width: 514px;
       margin: 0 0 20px;
@@ -65,7 +68,6 @@
       }
       @include between-screen(375px, 1225px) {
         text-align: center;
-        @include font-style($fw-400, $fs-12, $lh-143);
       }
     }
     a {
@@ -78,7 +80,8 @@
       background-color: white;
       padding: 5px 10px 5px 5px;
       color: $black-background-color;
-      @include font-style($fw-400, $fs-15, $lh-133);
+      font-size: clamp($fs-10, $vw-5, $fs-15);
+      @include font-style($fw-400, $lh-133);
       svg {
         order: -1;
       }

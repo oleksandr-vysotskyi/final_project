@@ -78,8 +78,8 @@ header li:last-of-type:hover {
   }
 }
 header li a {
+  font-size: clamp(12px, 5vw, 15px);
   font-weight: 400;
-  font-size: 15px;
   line-height: 133%;
   color: #fff;
   position: relative;
@@ -87,8 +87,6 @@ header li a {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   header li a {
     font-weight: 600;
-    font-size: 15px;
-    line-height: 133%;
   }
 }
 header li a::before {
@@ -105,8 +103,8 @@ header li a:hover::before {
   width: 100%;
 }
 header li .template {
+  font-size: clamp(14px, 5vw, 16px);
   font-weight: 400;
-  font-size: 16px;
   line-height: 125%;
   letter-spacing: 0.03em;
   color: #181818;
@@ -117,8 +115,6 @@ header li .template:hover::before {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   header li .template {
     font-weight: 600;
-    font-size: 15px;
-    line-height: 133%;
     border-radius: 0;
     min-width: 0;
     min-height: 0;

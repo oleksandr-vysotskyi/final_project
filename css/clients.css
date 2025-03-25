@@ -31,8 +31,8 @@
   color: #fff;
   text-align: center;
   margin: 0 0 15px;
+  font-size: clamp(30px, 5vw, 40px);
   font-weight: 400;
-  font-size: 40px;
   line-height: 105%;
 }
 @media screen and (min-width: 375px) and (max-width: 932px) {
@@ -43,8 +43,8 @@
 .clients article p {
   color: #c0c0c0;
   text-align: center;
+  font-size: clamp(18px, 5vw, 24px);
   font-weight: 400;
-  font-size: 24px;
   line-height: 125%;
 }
 .clients .logos {

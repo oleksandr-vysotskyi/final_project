@@ -64,18 +64,16 @@ header {
       }
     }
     a {
+      font-size: clamp($fs-12, $vw-5, $fs-15);
       @include font-style(
         $fw-400,
-        $fs-15,
         $lh-133
       );
       color: $white-color;
       position: relative;
       @include between-screen(320px, 768px) {
-        @include font-style(
-          $fw-600,
-          $fs-15,
-          $lh-133
+        @include font-weight(
+          $fw-600
         );
       }
       &::before {
@@ -93,9 +91,9 @@ header {
       }
     }
     .template {
+      font-size: clamp($fs-14, $vw-5, $fs-16);
       @include font-style(
         $fw-400,
-        $fs-16,
         $lh-125
       );
       letter-spacing: 0.03em;
@@ -104,10 +102,8 @@ header {
         width: 0;
       }
       @include between-screen(320px, 768px) {
-        @include font-style(
-          $fw-600,
-          $fs-15,
-          $lh-133
+        @include font-weight(
+          $fw-600
         );
         border-radius: 0;
         min-width: 0;

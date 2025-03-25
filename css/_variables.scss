@@ -4,17 +4,22 @@ $white-color: #fff;
 $silver-color: #c0c0c0;
 $cyan-blue-very-light-color: #e5e7eb;
 
+$vw-5: 5vw;
+
 $fw-400: 400;
 $fw-600: 600;
 
+$fs-10: 10px;
 $fs-12: 12px;
 $fs-13: 13px;
 $fs-14: 14px;
 $fs-15: 15px;
 $fs-16: 16px;
+$fs-18: 18px;
 $fs-23: 23px;
 $fs-24: 24px;
 $fs-28: 28px;
+$fs-30: 30px;
 $fs-38: 38px;
 $fs-40: 40px;
 $fs-54: 54px;
@@ -29,10 +34,13 @@ $lh-133: 133%;
 $lh-143: 143%;
 $lh-154: 154%;
 
-@mixin font-style($weight, $size, $line-height) {
+@mixin font-style($weight, $line-height) {
   font-weight: $weight;
-  font-size: $size;
   line-height: $line-height;
+}
+
+@mixin font-weight($weight) {
+  font-weight: $weight;
 }
 
 @mixin between-screen($min, $max) {

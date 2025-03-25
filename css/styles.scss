@@ -35,7 +35,8 @@ body {
     li {
       display: flex;
       gap: 6px;
-      @include font-style($fw-400, $fs-12, $lh-100);
+      font-size: clamp($fs-10, $vw-5, $fs-12);
+      @include font-style($fw-400, $lh-100);
       color: $white-color;
       &:first-of-type::before {
         content: "";

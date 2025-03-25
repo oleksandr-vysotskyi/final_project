@@ -17,20 +17,16 @@
     width: 100%;
     text-align: center;
     h2 {
-      @include font-style($fw-400, $fs-40, $lh-105);
+      font-size: clamp($fs-24, $vw-5, $fs-40);
+      @include font-style($fw-400, $lh-105);
       color: $white-color;
       margin: 0 0 15px;
-      @include between-screen(375px, 430px) {
-        @include font-style($fw-400, $fs-38, $lh-110);
-      }
     }
     p {
-      @include font-style($fw-400, $fs-23, $lh-130);
+      font-size: clamp($fs-16, $vw-5, $fs-23);
+      @include font-style($fw-400, $lh-130);
       color: $silver-color;
       margin: 0 0 42px;
-      @include between-screen(375px, 430px) {
-        @include font-style($fw-400, $fs-16, $lh-130);
-      }
       @include between-screen(375px, 768px) {
         margin: 0 0 15px;
       }
@@ -86,16 +82,15 @@
         letter-spacing: 0.14em;
         text-transform: uppercase;
         color: $white-color;
-        @include font-style($fw-400, $fs-14, $lh-143);
+        font-size: clamp($fs-10, $vw-5, $fs-14);
+        @include font-style($fw-400, $lh-143);
         margin: 0 0 10px;
       }
       p {
         max-width: 516px;
-        @include between-screen(375px, 1180px) {
-          @include font-style($fw-400, $fs-12, $lh-143);
-        }
+        font-size: clamp($fs-12, $vw-5, $fs-14);
+        @include font-style($fw-400, $lh-143);
         color: $silver-color;
-        @include font-style($fw-400, $fs-14, $lh-143);
         margin: 0 0 17px;
       }
       a {
@@ -108,7 +103,8 @@
         background-color: white;
         padding: 5px 10px 5px 5px;
         color: $black-background-color;
-        @include font-style($fw-400, $fs-15, $lh-133);
+        font-size: clamp($fs-12, $vw-5, $fs-15);
+        @include font-style($fw-400, $lh-133);
         svg {
           order: -1;
         }

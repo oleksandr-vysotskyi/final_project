@@ -33,7 +33,8 @@
     }
     h3 {
       color: $white-color;
-      @include font-style($fw-400, $fs-14, $lh-143);
+      font-size: clamp($fs-12, $vw-5, $fs-14);
+      @include font-style($fw-400, $lh-143);
       letter-spacing: 0.14em;
       text-transform: uppercase;
       max-width: 206px;
@@ -43,7 +44,8 @@
     }
     p {
       color: $silver-color;
-      @include font-style($fw-400, $fs-14, $lh-143);
+      font-size: clamp($fs-12, $vw-5, $fs-14);
+      @include font-style($fw-400, $lh-143);
       max-width: 297px;
       @include between-screen(375px, 1225px) {
         max-width: 320px;

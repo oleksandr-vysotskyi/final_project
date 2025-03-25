@@ -25,7 +25,8 @@
       color: $white-color;
       text-align: center;
       margin: 0 0 15px;
-      @include font-style($fw-400, $fs-40, $lh-105);
+      font-size: clamp($fs-30, $vw-5, $fs-40);
+      @include font-style($fw-400, $lh-105);
       @include between-screen(375px, 932px) {
         margin: 0 0 10px;
       }
@@ -33,7 +34,8 @@
     p {
       color: $silver-color;
       text-align: center;
-      @include font-style($fw-400, $fs-24, $lh-125);
+      font-size: clamp($fs-18, $vw-5, $fs-24);
+      @include font-style($fw-400, $lh-125);
     }
   }
   .logos {
